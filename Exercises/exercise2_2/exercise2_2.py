@@ -1,7 +1,7 @@
 # Exercise 2.2 Fys3150
 
 
-N = 10000000
+N = 10000
 sum_up = 0
 sum_down = 0
 
