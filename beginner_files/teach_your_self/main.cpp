@@ -1,7 +1,29 @@
 #include <iostream>
 using namespace std;
 
-void MultiplyNumbers()
+enum KompassRetninger
+{
+    North = 5,
+    South,
+    East,
+    West,
+};
+
+int main()
+{
+    cout << "Displaying directions and their symbolic values" << endl;
+    cout << "N:" << North << endl;
+    cout << "S:" << South << endl;
+    cout << "E:" << East << endl;
+    cout << "W:" << West << endl;
+
+    KompassRetninger WindDir = South;
+    cout << "Variable WindDir = " << WindDir << endl;
+
+    return 0;
+}
+
+/*void MultiplyNumbers()
 {
     cout << "Enter the first number: ";
     int FirstNumber = 0;
@@ -24,4 +46,4 @@ int main()
 
     return 0;
 }
-
+*/
