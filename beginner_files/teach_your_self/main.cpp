@@ -9,16 +9,22 @@ enum KompassRetninger
     West,
 };
 
+enum YourCards {Ace=43, Jack, Queen, King};
+
+
 int main()
 {
-    cout << "Displaying directions and their symbolic values" << endl;
-    cout << "N:" << North << endl;
-    cout << "S:" << South << endl;
-    cout << "E:" << East << endl;
-    cout << "W:" << West << endl;
+    cout << "Displaying YourCards and their symbolic values" << endl;
+    cout << Ace << endl;
+    cout << Jack << endl;
+    cout << Queen << endl;
+    cout << King << endl;
 
-    KompassRetninger WindDir = South;
-    cout << "Variable WindDir = " << WindDir << endl;
+    cout << "Calculating circumference of a circle, give the radius: " << endl;
+    double Radius = 0.;
+    cin >> Radius;
+    cout << "Circumference with R=" << Radius << " is: " << Radius*2*22/7 << endl;
+
 
     return 0;
 }
