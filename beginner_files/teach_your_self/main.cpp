@@ -1,7 +1,38 @@
 #include <iostream>
 using namespace std;
 
-enum KompassRetninger
+int main()
+{
+    const int ArrayLength = 4;
+
+    // Array of 5 integers, initialized to zero
+    int MyNumbers [ArrayLength] = {0};
+
+    cout << "Enter index number for element to be changed: ";
+    int nElementIndex = 0;
+    cin >> nElementIndex;
+    //should check here that index < 4 to not overwrite
+
+    cout << "Enter new value: ";
+    cin >> MyNumbers [nElementIndex];
+
+    cout << "first element:" << MyNumbers [0] << endl;
+    cout << "second element:" << MyNumbers [1] << endl;
+    cout << "third element:" << MyNumbers [2] << endl;
+    cout << "fourth element:" << MyNumbers [3] << endl;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+/*enum KompassRetninger
 {
     North = 5,
     South,
@@ -29,7 +60,7 @@ int main()
     return 0;
 }
 
-/*void MultiplyNumbers()
+void MultiplyNumbers()
 {
     cout << "Enter the first number: ";
     int FirstNumber = 0;
