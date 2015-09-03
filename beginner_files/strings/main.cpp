@@ -17,13 +17,13 @@ int main()
     getline(cin, Secline);
 
     cout << "Result of concatenation: " << endl;
-    strin Concat = Firstline + " " + Secline;
+    string Concat = Firstline + " " + Secline;
     cout << Concat << endl;
 
     cout << "Copy of concatenated string: " << endl;
     string Copy;
     Copy = Concat;
-    cout = Copy << endl;
+    cout << Copy << endl;
 
     cout << "Length of concat string: " << Concat.length() << endl;
 
