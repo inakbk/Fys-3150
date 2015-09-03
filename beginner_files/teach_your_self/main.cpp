@@ -11,7 +11,7 @@ int main()
     cout << "Enter index number for element to be changed: ";
     int nElementIndex = 0;
     cin >> nElementIndex;
-    //should check here that index < 4 to not overwrite
+    //should check here that index < 4 to not overwrite outside the array
 
     cout << "Enter new value: ";
     cin >> MyNumbers [nElementIndex];
