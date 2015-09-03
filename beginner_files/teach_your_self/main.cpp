@@ -3,23 +3,36 @@ using namespace std;
 
 int main()
 {
-    const int ArrayLength = 4;
+    const int ArrayLength = 3;
 
     // Array of 5 integers, initialized to zero
-    int MyNumbers [ArrayLength] = {0};
+    int MyNumbers [ArrayLength][ArrayLength-1] = \
+    {{10, 8}, {0, 2}, {12, 9}};
 
-    cout << "Enter index number for element to be changed: ";
-    int nElementIndex = 0;
-    cin >> nElementIndex;
-    //should check here that index < 4 to not overwrite outside the array
+    cout << "Enter index number for element to be changed (m, n): ";
+    int mElementIndex, nElementIndex = {0};
+    cin >> mElementIndex >> nElementIndex;
+    cout << "user input 2: " << nElementIndex << endl;
 
-    cout << "Enter new value: ";
-    cin >> MyNumbers [nElementIndex];
+    //should check here that index < 3 to not overwrite outside the array
+    if((mElementIndex < ArrayLength) && (nElementIndex < (ArrayLength-1)))
+    {
+        cout << "Enter new value: ";
+        cin >> MyNumbers [mElementIndex][nElementIndex];
+    }
+    else
+    {
+        cout << "Bad usage, index out of bounds!!" <<  endl;
+        exit(1);
+    }
 
-    cout << "first element:" << MyNumbers [0] << endl;
-    cout << "second element:" << MyNumbers [1] << endl;
-    cout << "third element:" << MyNumbers [2] << endl;
-    cout << "fourth element:" << MyNumbers [3] << endl;
+
+    cout << "Row 0: " << MyNumbers [0][0] << "  "\
+                     << MyNumbers [0][1] << endl;
+    cout << "Row 1: " << MyNumbers [1][0] << "  "\
+                     << MyNumbers [1][1] << endl;
+    cout << "Row 2: " << MyNumbers [2][0] << "  "\
+                     << MyNumbers [2][1] << endl;
 
     return 0;
 }
