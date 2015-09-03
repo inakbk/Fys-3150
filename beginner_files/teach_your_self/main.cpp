@@ -5,16 +5,30 @@ int main()
 {
     const int ArrayLength = 3;
 
-    // Array of 5 integers, initialized to zero
+    // Array of 3 integers, initialized to zero
     int MyNumbers [ArrayLength][ArrayLength-1] = \
     {{10, 8}, {0, 2}, {12, 9}};
 
+    //printing the array
+    cout << "Row 0: " << MyNumbers [0][0] << "  "\
+                     << MyNumbers [0][1] << endl;
+    cout << "Row 1: " << MyNumbers [1][0] << "  "\
+                     << MyNumbers [1][1] << endl;
+    cout << "Row 2: " << MyNumbers [2][0] << "  "\
+                     << MyNumbers [-2][-1] << endl;
+
+
     cout << "Enter index number for element to be changed (m, n): ";
-    int mElementIndex, nElementIndex = {0};
+    int mElementIndex = 0,
+        nElementIndex = 0;
     cin >> mElementIndex >> nElementIndex;
-    cout << "user input 2: " << nElementIndex << endl;
+    //chacking value given
+    cout << "\nuser input given: " << mElementIndex << endl;
+    cout << "user input given: " << nElementIndex << endl;
+
 
     //should check here that index < 3 to not overwrite outside the array
+
     if((mElementIndex < ArrayLength) && (nElementIndex < (ArrayLength-1)))
     {
         cout << "Enter new value: ";
@@ -27,6 +41,7 @@ int main()
     }
 
 
+    cout << "--------------" << endl;
     cout << "Row 0: " << MyNumbers [0][0] << "  "\
                      << MyNumbers [0][1] << endl;
     cout << "Row 1: " << MyNumbers [1][0] << "  "\
