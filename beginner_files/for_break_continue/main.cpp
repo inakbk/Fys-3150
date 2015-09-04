@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    for(;;) // an infinite loop
+    for(;;) // an infinite loop, could use while(true)
     {
         cout << "Enter two integers: " << endl;
         int Num1 = 0, Num2 = 0;
