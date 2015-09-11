@@ -12,8 +12,9 @@ int main()
     //cout << "Hello World!" << endl;
     vec x = randu<vec>(5);
     string a = "a";
+    int n = 10;
     string b = to_string(8);
-    string c =to_string(10)+a;
+    string c =to_string(n)+a;
 
 
     cout << c << endl;
